@@ -9,7 +9,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import { Contact, HandCoins, Home, Mail, Menu, Notebook, Sparkles, Star } from "lucide-react"
 
 export function SheetComponent() {
     return (
@@ -17,15 +17,15 @@ export function SheetComponent() {
             <SheetTrigger asChild>
                 <Button variant="ghost" size='icon' className='rounded-full'> <Menu /> </Button>
             </SheetTrigger>
-            <SheetContent className='bg-black outline-black border-black text-white'>
-                <navbar className=" flex items-center justify-center gap-6 flex-col">
-                    <SheetHeader className={'text-3xl'}>
-                        COLOSSEUM'24
+            <SheetContent className='bg-black outline-black border-black text-slate-200'>
+                <navbar className=" flex items-start justify-center gap-6 flex-col pt-6 ">
+                    <SheetHeader className={'text-2xl text-white'}>
+                        COLOSSEUM&apos;24
                     </SheetHeader>
-                    <p>HOME</p>
-                    <p>EVENTS</p>
-                    <p>SPONSORS</p>
-                    <p>CONTACT US</p>
+                    <div className="flex flex-row gap-4"> <Home /> HOME</div>
+                    <div className="flex flex-row gap-4"><Sparkles /> EVENTS</div>
+                    <div className="flex flex-row gap-4"> <HandCoins /> SPONSORS</div>
+                    <div className="flex flex-row gap-4"> <Mail /> CONTACT US</div>
                 </navbar>
             </SheetContent>
         </Sheet>

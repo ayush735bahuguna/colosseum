@@ -1,9 +1,14 @@
 import React from 'react'
 import { SheetComponent } from './Home/sheetComponent'
+import Image from 'next/image'
+import Logo from '@/assets/logo.png'
 
 export default function Navbar() {
     return (
         <navbar className="backdrop-blur-sm w-full p-8 text-white flex items-center sm:justify-center max-sm:justify-start gap-6">
+            <div className='h-[80px] w-[80px] absolute top-4 max-sm:right-3 sm:left-3'>
+                <Image src={Logo} width={'100px'} height={'100px'} />
+            </div>
             <div className="sm:hidden">
                 <SheetComponent />
             </div>

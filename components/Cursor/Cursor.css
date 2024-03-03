@@ -1,0 +1,45 @@
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2000;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.2s ease;
+    transform-origin: center center;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.grow,
+.grow-small,
+.OpenProject {
+    transform: scale(7);
+    background-color: blueviolet;
+    mix-blend-mode: difference;
+}
+
+.grow-small {
+    transform: scale(2.5);
+}
+
+
+
+.Openproject {
+    transform: scale(3);
+    padding: 12px;
+}
+
+.openHidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.openVisible {
+    visibility: visible;
+    opacity: 1;
+}
